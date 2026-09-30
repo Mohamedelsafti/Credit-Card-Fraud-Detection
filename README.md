@@ -1,24 +1,18 @@
-# 💳 Credit Card Fraud Detection & Financial Data Preprocessing
+# Credit Card Fraud Detection & Financial Data Preprocessing
 
-## 📌 Business Overview
-In the financial sector, detecting fraudulent credit card transactions and handling imbalanced datasets is critical for preventing financial loss and ensuring security. This project focuses on processing, cleaning, and analyzing financial transaction data.
+## Overview
+Financial datasets are notoriously imbalanced—fraudulent transactions make up only a tiny fraction of the total data. In this project, I cleaned and preprocessed transaction records, handled extreme outliers, and analyzed class imbalance to better understand fraud patterns.
 
----
+## What I Did
+- **Data Preprocessing & Scaling:** Cleaned missing values, treated extreme transaction outliers, and scaled feature values for analysis.
+- **Class Imbalance Analysis:** Examined the distribution between normal and fraudulent transactions to see how skewed the data really is.
+- **Exploratory Data Analysis (EDA):** Generated correlation heatmaps and distribution plots (`fraud_by_hour.png`, `top_correlations.png`) to spot time-based and feature-based risk patterns.
 
-## 🔑 Key Features & Deliverables
-* **Data Preprocessing & Validation:** Standardized financial features, handled missing values, and treated extreme outliers in transaction amounts.
-* **Imbalanced Data Handling:** Analyzed data distribution to isolate rare fraudulent instances from legitimate transactions.
-* **Exploratory Analytics:** Generated correlation matrices and distribution plots to identify risk patterns.
+## Tech Stack
+- **Python**
+- **Pandas & NumPy** (Data manipulation and cleaning)
+- **Matplotlib & Seaborn** (Data visualization)
 
----
-
-## 🛠 Tech Stack & Libraries
-* **Language:** Python
-* **Data Preprocessing:** Pandas, NumPy
-* **Visualization:** Matplotlib, Seaborn
-
----
-
-## 📈 Key Insights & Results
-1. Built a clean data pipeline ready for machine learning model training.
-2. Isolated fraudulent transaction characteristics to assist in risk assessment.
+## Key Takeaways
+- Fraudulent transactions are heavily concentrated in specific time windows and transaction amounts.
+- Standardizing features and isolating rare fraud instances is essential before feeding this data into any ML classification model.
